@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="-242.0289855072464" y="76.339285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Plans View Controller-->
         <scene sceneID="g0e-gC-paa">
             <objects>
-                <viewController id="ERl-xG-qFh" sceneMemberID="viewController">
+                <viewController id="ERl-xG-qFh" customClass="PlansViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mFn-Gr-jFu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,16 +62,25 @@
                                         <rect key="frame" x="1.5" y="0.0" width="32" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="A"/>
+                                        <connections>
+                                            <segue destination="dRQ-to-HYN" kind="presentation" identifier="goToPlanA" modalPresentationStyle="fullScreen" id="QiO-yy-Ciy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4g-mE-kU1">
                                         <rect key="frame" x="2" y="102" width="31" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="B"/>
+                                        <connections>
+                                            <segue destination="dRQ-to-HYN" kind="presentation" identifier="goToPlanB" modalPresentationStyle="fullScreen" id="2jD-VE-QVb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxl-eH-EvR">
                                         <rect key="frame" x="0.0" y="204" width="35" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="C"/>
+                                        <connections>
+                                            <segue destination="dRQ-to-HYN" kind="presentation" identifier="goToPlanC" modalPresentationStyle="fullScreen" id="euZ-1J-vIn"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -81,6 +90,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFE-hs-MbT">
+                                <rect key="frame" x="20" y="44" width="64" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="history"/>
+                                <connections>
+                                    <segue destination="iLq-Et-RHs" kind="presentation" identifier="goToHistory" modalPresentationStyle="fullScreen" id="uBH-9s-10o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -94,12 +111,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnj-55-xnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="794" y="76"/>
+            <point key="canvasLocation" x="792.75362318840587" y="75.669642857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
+        <scene sceneID="t9G-RM-JaA">
+            <objects>
+                <viewController id="iLq-Et-RHs" customClass="HistoryViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tUD-hu-e7b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="NXs-Vh-lWf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8K-bB-sSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="858"/>
+        </scene>
+        <!--Training View Controller-->
         <scene sceneID="GhL-P9-BMp">
             <objects>
-                <viewController id="dRQ-to-HYN" sceneMemberID="viewController">
+                <viewController id="dRQ-to-HYN" customClass="TrainingViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xyJ-4p-537">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,4 +144,10 @@
             <point key="canvasLocation" x="1671" y="76"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QiO-yy-Ciy"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="history" width="128" height="128"/>
+    </resources>
 </document>

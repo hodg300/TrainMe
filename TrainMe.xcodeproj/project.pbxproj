@@ -15,6 +15,9 @@
 		A72317D02493614B009C024E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72317CF2493614B009C024E /* Assets.xcassets */; };
 		A72317D32493614B009C024E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72317D12493614B009C024E /* LaunchScreen.storyboard */; };
 		A72317DD24936762009C024E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A72317DC24936762009C024E /* GoogleService-Info.plist */; };
+		A767425B24939F9800F3BD31 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425A24939F9800F3BD31 /* PlansViewController.swift */; };
+		A767425D24939FE000F3BD31 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425C24939FE000F3BD31 /* TrainingViewController.swift */; };
+		A767425F2493A02B00F3BD31 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425E2493A02B00F3BD31 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		A72317D42493614B009C024E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A72317DC24936762009C024E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A76742592493731200F3BD31 /* TrainMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrainMe.entitlements; sourceTree = "<group>"; };
+		A767425A24939F9800F3BD31 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
+		A767425C24939FE000F3BD31 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		A767425E2493A02B00F3BD31 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		DD55C2BF22C6DC21C57423C7 /* Pods-TrainMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainMe.release.xcconfig"; path = "Target Support Files/Pods-TrainMe/Pods-TrainMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +81,9 @@
 				A72317D12493614B009C024E /* LaunchScreen.storyboard */,
 				A72317D42493614B009C024E /* Info.plist */,
 				A72317DC24936762009C024E /* GoogleService-Info.plist */,
+				A767425A24939F9800F3BD31 /* PlansViewController.swift */,
+				A767425C24939FE000F3BD31 /* TrainingViewController.swift */,
+				A767425E2493A02B00F3BD31 /* HistoryViewController.swift */,
 			);
 			path = TrainMe;
 			sourceTree = "<group>";
@@ -230,7 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A767425D24939FE000F3BD31 /* TrainingViewController.swift in Sources */,
 				A72317CB24936149009C024E /* ViewController.swift in Sources */,
+				A767425B24939F9800F3BD31 /* PlansViewController.swift in Sources */,
+				A767425F2493A02B00F3BD31 /* HistoryViewController.swift in Sources */,
 				A72317C724936149009C024E /* AppDelegate.swift in Sources */,
 				A72317C924936149009C024E /* SceneDelegate.swift in Sources */,
 			);
