@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>791646263763-vg1vbhu8t8c6us0et3htm2r45cvgaekn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.791646263763-vg1vbhu8t8c6us0et3htm2r45cvgaekn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAnSG8k4ZbKnFsKTVEdtMvK09vMngknH7I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>791646263763</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hod.TrainMe</string>
+	<key>PROJECT_ID</key>
+	<string>trainme-e9588</string>
+	<key>STORAGE_BUCKET</key>
+	<string>trainme-e9588.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:791646263763:ios:adc6504ec93e7347027726</string>
+	<key>DATABASE_URL</key>
+	<string>https://trainme-e9588.firebaseio.com</string>
+</dict>
+</plist>
