@@ -7,16 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTa-CC-UIR">
-                                <rect key="frame" x="159.5" y="418" width="95" height="60"/>
+                                <rect key="frame" x="159.5" y="391" width="95" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
@@ -24,7 +24,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrainMe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWZ-Sr-ao4">
-                                <rect key="frame" x="55" y="240" width="304" height="98"/>
+                                <rect key="frame" x="55" y="213" width="304" height="98"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="90"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -90,20 +90,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFE-hs-MbT">
-                                <rect key="frame" x="20" y="44" width="64" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFE-hs-MbT">
+                                <rect key="frame" x="354" y="54" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Hq6-rf-Gz1"/>
+                                    <constraint firstAttribute="height" constant="50" id="pR5-TL-bQs"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="history"/>
                                 <connections>
                                     <segue destination="iLq-Et-RHs" kind="presentation" identifier="goToHistory" modalPresentationStyle="fullScreen" id="uBH-9s-10o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCS-Q2-h5g">
+                                <rect key="frame" x="10" y="54" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OgE-vq-5st"/>
+                                    <constraint firstAttribute="width" constant="50" id="tPk-Ue-0dA"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="logout black"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToLogin" id="7UD-MY-qYS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Ewd-Qo-Y8R" firstAttribute="centerX" secondItem="mFn-Gr-jFu" secondAttribute="centerX" id="4Eu-ee-KtN"/>
+                            <constraint firstItem="gCS-Q2-h5g" firstAttribute="top" secondItem="fvg-da-c23" secondAttribute="top" constant="10" id="FJb-14-Bn6"/>
                             <constraint firstItem="4uv-ks-Ecu" firstAttribute="centerX" secondItem="mFn-Gr-jFu" secondAttribute="centerX" id="JuI-NR-PBL"/>
+                            <constraint firstItem="KFE-hs-MbT" firstAttribute="top" secondItem="fvg-da-c23" secondAttribute="top" constant="10" id="QwI-4S-SLF"/>
                             <constraint firstItem="Ewd-Qo-Y8R" firstAttribute="centerY" secondItem="mFn-Gr-jFu" secondAttribute="centerY" id="Wty-vb-iSc"/>
+                            <constraint firstItem="gCS-Q2-h5g" firstAttribute="leading" secondItem="fvg-da-c23" secondAttribute="leading" constant="10" id="v0W-Lj-YIq"/>
+                            <constraint firstItem="fvg-da-c23" firstAttribute="trailing" secondItem="KFE-hs-MbT" secondAttribute="trailing" constant="10" id="vUg-NX-uYb"/>
                             <constraint firstItem="Ewd-Qo-Y8R" firstAttribute="top" secondItem="4uv-ks-Ecu" secondAttribute="bottom" constant="60" id="zDG-hW-0jH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fvg-da-c23"/>
@@ -135,19 +153,140 @@
                     <view key="view" contentMode="scaleToFill" id="xyJ-4p-537">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="vHq-Vk-0Ih">
+                                <rect key="frame" x="20" y="132" width="374" height="440.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syi-b3-WGg">
+                                        <rect key="frame" x="124.5" y="0.0" width="125.5" height="51.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="47"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="training summery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTC-bj-x1X">
+                                        <rect key="frame" x="37" y="101.5" width="300" height="230"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="230" id="nQs-AW-scU"/>
+                                            <constraint firstAttribute="width" constant="300" id="tLu-nV-nzD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hel-CS-W1X">
+                                        <rect key="frame" x="146.5" y="381.5" width="81" height="59"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <segue destination="Pwe-1w-tPZ" kind="presentation" identifier="goToExplainTraining" modalPresentationStyle="fullScreen" id="o90-MA-b92"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vHq-Vk-0Ih" firstAttribute="top" secondItem="a2d-EI-jex" secondAttribute="top" constant="88" id="LkH-nZ-rxz"/>
+                            <constraint firstItem="vHq-Vk-0Ih" firstAttribute="leading" secondItem="a2d-EI-jex" secondAttribute="leading" constant="20" id="Mqk-B6-fyP"/>
+                            <constraint firstItem="a2d-EI-jex" firstAttribute="trailing" secondItem="vHq-Vk-0Ih" secondAttribute="trailing" constant="20" id="kDD-29-5CS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="a2d-EI-jex"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AsU-Mz-rEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="76"/>
+            <point key="canvasLocation" x="1669.5652173913045" y="75.669642857142847"/>
+        </scene>
+        <!--Explain Training View Controller-->
+        <scene sceneID="VjM-M2-Pkb">
+            <objects>
+                <viewController id="Pwe-1w-tPZ" customClass="ExplainTrainingViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7NN-nM-SAe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TZd-pd-W4C">
+                                <rect key="frame" x="19" y="132" width="376" height="530"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="step 1 - 30 sec push ups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptc-N9-gF9">
+                                        <rect key="frame" x="4.5" y="0.0" width="367.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GOW-vF-Lpg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-4Y-8s3">
+                                        <rect key="frame" x="13" y="80" width="350" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="KIc-sB-iC2"/>
+                                            <constraint firstAttribute="width" constant="350" id="zg6-3D-hMq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10..9 seconds to start ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YI2-4P-lm9">
+                                        <rect key="frame" x="0.0" y="360" width="376" height="170"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4qz-Ji-qxC" firstAttribute="bottom" secondItem="TZd-pd-W4C" secondAttribute="bottom" constant="200" id="CLe-pG-h4q"/>
+                            <constraint firstItem="TZd-pd-W4C" firstAttribute="top" secondItem="4qz-Ji-qxC" secondAttribute="top" constant="88" id="Qzq-O3-db6"/>
+                            <constraint firstItem="TZd-pd-W4C" firstAttribute="centerX" secondItem="7NN-nM-SAe" secondAttribute="centerX" id="bRd-cp-IpN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4qz-Ji-qxC"/>
+                    </view>
+                    <connections>
+                        <segue destination="qeK-N4-Ap7" kind="presentation" identifier="goToTimer" modalPresentationStyle="fullScreen" id="TFd-3c-Fui"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6q0-Kr-NmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="74"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="CMj-co-FMo">
+            <objects>
+                <viewController id="qeK-N4-Ap7" customClass="TimerViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iIj-2P-CrP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVV-xE-20i">
+                                <rect key="frame" x="113.5" y="411.5" width="187" height="73"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="67"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OVV-xE-20i" firstAttribute="centerY" secondItem="iIj-2P-CrP" secondAttribute="centerY" id="4qX-9t-e7D"/>
+                            <constraint firstItem="OVV-xE-20i" firstAttribute="centerX" secondItem="iIj-2P-CrP" secondAttribute="centerX" id="E8H-4x-K90"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BL9-Bg-Yr4"/>
+                    </view>
+                    <connections>
+                        <segue destination="Pwe-1w-tPZ" kind="presentation" identifier="goToAnotherStep" modalPresentationStyle="fullScreen" id="nNv-Jo-rHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCf-qE-xXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3654" y="74"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QiO-yy-Ciy"/>
+        <segue reference="TFd-3c-Fui"/>
+        <segue reference="nNv-Jo-rHT"/>
+        <segue reference="2jD-VE-QVb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="history" width="128" height="128"/>
+        <image name="logout black" width="128" height="128"/>
     </resources>
 </document>

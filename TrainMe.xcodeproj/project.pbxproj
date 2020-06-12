@@ -10,14 +10,17 @@
 		8A061C87625A10E5B2D33FBB /* Pods_TrainMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C23A24C4289D49DF20FFC8 /* Pods_TrainMe.framework */; };
 		A72317C724936149009C024E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72317C624936149009C024E /* AppDelegate.swift */; };
 		A72317C924936149009C024E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72317C824936149009C024E /* SceneDelegate.swift */; };
-		A72317CB24936149009C024E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72317CA24936149009C024E /* ViewController.swift */; };
+		A72317CB24936149009C024E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72317CA24936149009C024E /* LoginViewController.swift */; };
 		A72317CE24936149009C024E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72317CC24936149009C024E /* Main.storyboard */; };
 		A72317D02493614B009C024E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72317CF2493614B009C024E /* Assets.xcassets */; };
 		A72317D32493614B009C024E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72317D12493614B009C024E /* LaunchScreen.storyboard */; };
 		A72317DD24936762009C024E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A72317DC24936762009C024E /* GoogleService-Info.plist */; };
+		A72EDF612493DD1D007F3027 /* ExplainTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EDF602493DD1D007F3027 /* ExplainTrainingViewController.swift */; };
+		A72EDF632493DE61007F3027 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72EDF622493DE61007F3027 /* TimerViewController.swift */; };
 		A767425B24939F9800F3BD31 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425A24939F9800F3BD31 /* PlansViewController.swift */; };
 		A767425D24939FE000F3BD31 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425C24939FE000F3BD31 /* TrainingViewController.swift */; };
 		A767425F2493A02B00F3BD31 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425E2493A02B00F3BD31 /* HistoryViewController.swift */; };
+		A7D8656F2493D1560093E11D /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8656E2493D1560093E11D /* Training.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,16 +29,19 @@
 		A72317C324936149009C024E /* TrainMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72317C624936149009C024E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A72317C824936149009C024E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A72317CA24936149009C024E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A72317CA24936149009C024E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A72317CD24936149009C024E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A72317CF2493614B009C024E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A72317D22493614B009C024E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A72317D42493614B009C024E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A72317DC24936762009C024E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A72EDF602493DD1D007F3027 /* ExplainTrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainTrainingViewController.swift; sourceTree = "<group>"; };
+		A72EDF622493DE61007F3027 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		A76742592493731200F3BD31 /* TrainMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrainMe.entitlements; sourceTree = "<group>"; };
 		A767425A24939F9800F3BD31 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		A767425C24939FE000F3BD31 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
 		A767425E2493A02B00F3BD31 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		A7D8656E2493D1560093E11D /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
 		DD55C2BF22C6DC21C57423C7 /* Pods-TrainMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainMe.release.xcconfig"; path = "Target Support Files/Pods-TrainMe/Pods-TrainMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +81,7 @@
 				A76742592493731200F3BD31 /* TrainMe.entitlements */,
 				A72317C624936149009C024E /* AppDelegate.swift */,
 				A72317C824936149009C024E /* SceneDelegate.swift */,
-				A72317CA24936149009C024E /* ViewController.swift */,
+				A72317CA24936149009C024E /* LoginViewController.swift */,
 				A72317CC24936149009C024E /* Main.storyboard */,
 				A72317CF2493614B009C024E /* Assets.xcassets */,
 				A72317D12493614B009C024E /* LaunchScreen.storyboard */,
@@ -84,6 +90,9 @@
 				A767425A24939F9800F3BD31 /* PlansViewController.swift */,
 				A767425C24939FE000F3BD31 /* TrainingViewController.swift */,
 				A767425E2493A02B00F3BD31 /* HistoryViewController.swift */,
+				A7D8656E2493D1560093E11D /* Training.swift */,
+				A72EDF602493DD1D007F3027 /* ExplainTrainingViewController.swift */,
+				A72EDF622493DE61007F3027 /* TimerViewController.swift */,
 			);
 			path = TrainMe;
 			sourceTree = "<group>";
@@ -239,8 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D8656F2493D1560093E11D /* Training.swift in Sources */,
+				A72EDF632493DE61007F3027 /* TimerViewController.swift in Sources */,
 				A767425D24939FE000F3BD31 /* TrainingViewController.swift in Sources */,
-				A72317CB24936149009C024E /* ViewController.swift in Sources */,
+				A72EDF612493DD1D007F3027 /* ExplainTrainingViewController.swift in Sources */,
+				A72317CB24936149009C024E /* LoginViewController.swift in Sources */,
 				A767425B24939F9800F3BD31 /* PlansViewController.swift in Sources */,
 				A767425F2493A02B00F3BD31 /* HistoryViewController.swift in Sources */,
 				A72317C724936149009C024E /* AppDelegate.swift in Sources */,
