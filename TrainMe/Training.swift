@@ -3,12 +3,12 @@
 import Foundation
 
 class Training {
-    var email : String?
-    var date : Date
+    var type : String?
     
-    init(email: String, date: Date) {
-        self.email = email
-        self.date = date
+    
+    init(type: String) {
+        self.type = type
+        
     }
     
     

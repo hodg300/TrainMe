@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A061C87625A10E5B2D33FBB /* Pods_TrainMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C23A24C4289D49DF20FFC8 /* Pods_TrainMe.framework */; };
+		A70AF3EE2494C72500F361B4 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70AF3ED2494C72500F361B4 /* Step.swift */; };
 		A72317C724936149009C024E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72317C624936149009C024E /* AppDelegate.swift */; };
 		A72317C924936149009C024E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72317C824936149009C024E /* SceneDelegate.swift */; };
 		A72317CB24936149009C024E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72317CA24936149009C024E /* LoginViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		10C23A24C4289D49DF20FFC8 /* Pods_TrainMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C1FDEC0A65A158B96B93D6 /* Pods-TrainMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainMe.debug.xcconfig"; path = "Target Support Files/Pods-TrainMe/Pods-TrainMe.debug.xcconfig"; sourceTree = "<group>"; };
+		A70AF3ED2494C72500F361B4 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		A72317C324936149009C024E /* TrainMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72317C624936149009C024E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A72317C824936149009C024E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				A7D8656E2493D1560093E11D /* Training.swift */,
 				A72EDF602493DD1D007F3027 /* ExplainTrainingViewController.swift */,
 				A72EDF622493DE61007F3027 /* TimerViewController.swift */,
+				A70AF3ED2494C72500F361B4 /* Step.swift */,
 			);
 			path = TrainMe;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				A72317CB24936149009C024E /* LoginViewController.swift in Sources */,
 				A767425B24939F9800F3BD31 /* PlansViewController.swift in Sources */,
 				A767425F2493A02B00F3BD31 /* HistoryViewController.swift in Sources */,
+				A70AF3EE2494C72500F361B4 /* Step.swift in Sources */,
 				A72317C724936149009C024E /* AppDelegate.swift in Sources */,
 				A72317C924936149009C024E /* SceneDelegate.swift in Sources */,
 			);
