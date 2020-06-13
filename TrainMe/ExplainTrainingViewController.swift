@@ -15,8 +15,9 @@ class ExplainTrainingViewController: UIViewController {
     var currentPlan :[Step] = [Step]()
     var index : Int!
     var timer:Timer?
-    var timeLeft = 1
+    var timeLeft = 10
     var type :String!
+    var pressedStop : Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,10 @@ class ExplainTrainingViewController: UIViewController {
         if timeLeft <= 0 {
             timer?.invalidate()
             timer = nil
-            performSegue(withIdentifier: "goToTimer", sender: self)
+            print("nowwww1  -------\(self.pressedStop)")
+            if(self.pressedStop){
+                performSegue(withIdentifier: "goToTimer", sender: self)
+            }
         }
     }
     
@@ -43,10 +47,12 @@ class ExplainTrainingViewController: UIViewController {
         ExplainTraining_LBL_title.text = "Step \(index+1) - \(currentPlan[index].nameOfStep!) - 30 sec"
         ExplainTraining_IMG_image.image = currentPlan[index].pic!
     }
-
+    
+ // MARK: - check why that i come back to menu the timer still running
     @IBAction func stpTraining(_ sender: UIButton) {
-            timer?.invalidate()
-            timer = nil
+        self.pressedStop = false
+//        print("nowwww2  -------\(self.pressedStop ?? true)")
+        performSegue(withIdentifier: "stopExplainAndGoToPlans", sender: self)
     }
     
     // MARK: - Navigation
@@ -57,9 +63,9 @@ class ExplainTrainingViewController: UIViewController {
         // Pass the selected object to the new view controller.
        if(segue.identifier == "goToTimer"){
             let timerView = segue.destination as! TimerViewController
-        timerView.currentPlan = currentPlan
+            timerView.currentPlan = currentPlan
             timerView.index = index
-        timerView.type = type
+            timerView.type = type
         }
     }
     

@@ -23,12 +23,12 @@ class TimerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("in hereee!@#!@#!@#!@#!@#!@#!@#!@#!")
         ref = Database.database().reference().child("Users").child(String(Auth.auth().currentUser!.uid))
         ref.observe(.childAdded, with: { snapshot in
             self.dataList = snapshot.value as! [String]
             self.dataList.append(self.type)
-            print("\(self.dataList)")
+//            print("\(self.dataList)")
         })
         index += 1
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
