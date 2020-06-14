@@ -17,14 +17,20 @@ class ExplainTrainingViewController: UIViewController {
     var timer:Timer?
     var timeLeft = 10
     var type :String!
-    var pressedStop : Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
         setInfo()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
+
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        timer?.invalidate()
+
     }
     
     @objc func onTimerFires()
@@ -35,10 +41,7 @@ class ExplainTrainingViewController: UIViewController {
         if timeLeft <= 0 {
             timer?.invalidate()
             timer = nil
-            print("nowwww1  -------\(self.pressedStop)")
-            if(self.pressedStop){
-                performSegue(withIdentifier: "goToTimer", sender: self)
-            }
+            performSegue(withIdentifier: "goToTimer", sender: self)
         }
     }
     
@@ -50,8 +53,6 @@ class ExplainTrainingViewController: UIViewController {
     
  // MARK: - check why that i come back to menu the timer still running
     @IBAction func stpTraining(_ sender: UIButton) {
-        self.pressedStop = false
-//        print("nowwww2  -------\(self.pressedStop ?? true)")
         performSegue(withIdentifier: "stopExplainAndGoToPlans", sender: self)
     }
     
