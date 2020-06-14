@@ -1,10 +1,3 @@
-//
-//  ExplainTrainingViewController.swift
-//  TrainMe
-//
-//  Created by user165563 on 6/12/20.
-//  Copyright © 2020 hodgohasi. All rights reserved.
-//
 
 import UIKit
 
@@ -51,7 +44,7 @@ class ExplainTrainingViewController: UIViewController {
         ExplainTraining_IMG_image.image = currentPlan[index].pic!
     }
     
- // MARK: - check why that i come back to menu the timer still running
+
     @IBAction func stpTraining(_ sender: UIButton) {
         performSegue(withIdentifier: "stopExplainAndGoToPlans", sender: self)
     }
