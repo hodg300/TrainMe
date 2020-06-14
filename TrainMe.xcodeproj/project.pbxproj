@@ -21,7 +21,6 @@
 		A767425B24939F9800F3BD31 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425A24939F9800F3BD31 /* PlansViewController.swift */; };
 		A767425D24939FE000F3BD31 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425C24939FE000F3BD31 /* TrainingViewController.swift */; };
 		A767425F2493A02B00F3BD31 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425E2493A02B00F3BD31 /* HistoryViewController.swift */; };
-		A7D8656F2493D1560093E11D /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8656E2493D1560093E11D /* Training.swift */; };
 		A7F61B49249617C10037203B /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F61B48249617C10037203B /* MyCustomCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		A767425A24939F9800F3BD31 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		A767425C24939FE000F3BD31 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
 		A767425E2493A02B00F3BD31 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		A7D8656E2493D1560093E11D /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
 		A7F61B48249617C10037203B /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 		DD55C2BF22C6DC21C57423C7 /* Pods-TrainMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainMe.release.xcconfig"; path = "Target Support Files/Pods-TrainMe/Pods-TrainMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +92,6 @@
 				A767425A24939F9800F3BD31 /* PlansViewController.swift */,
 				A767425C24939FE000F3BD31 /* TrainingViewController.swift */,
 				A767425E2493A02B00F3BD31 /* HistoryViewController.swift */,
-				A7D8656E2493D1560093E11D /* Training.swift */,
 				A72EDF602493DD1D007F3027 /* ExplainTrainingViewController.swift */,
 				A72EDF622493DE61007F3027 /* TimerViewController.swift */,
 				A70AF3ED2494C72500F361B4 /* Step.swift */,
@@ -254,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7D8656F2493D1560093E11D /* Training.swift in Sources */,
 				A72EDF632493DE61007F3027 /* TimerViewController.swift in Sources */,
 				A767425D24939FE000F3BD31 /* TrainingViewController.swift in Sources */,
 				A7F61B49249617C10037203B /* MyCustomCell.swift in Sources */,

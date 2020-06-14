@@ -69,18 +69,18 @@ class PlansViewController: UIViewController {
             let trainingView = segue.destination as! TrainingViewController
             trainingView.currentPlan = plans["A"]!
             trainingView.planTitle = "Plan A"
-            trainingView.type = "A"
+            trainingView.plan = "A"
         }else if(segue.identifier == "goToPlanB"){
             let trainingView = segue.destination as! TrainingViewController
             trainingView.currentPlan = plans["B"]!
             trainingView.planTitle = "Plan B"
-            trainingView.type = "B"
+            trainingView.plan = "B"
 
         }else if(segue.identifier == "goToPlanC"){
             let trainingView = segue.destination as! TrainingViewController
             trainingView.currentPlan = plans["C"]!
             trainingView.planTitle = "Plan C"
-            trainingView.type = "C"
+            trainingView.plan = "C"
 
         }
         

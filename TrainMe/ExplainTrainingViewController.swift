@@ -16,7 +16,7 @@ class ExplainTrainingViewController: UIViewController {
     var index : Int!
     var timer:Timer?
     var timeLeft = 1
-    var type :String!
+    var plan :String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +66,7 @@ class ExplainTrainingViewController: UIViewController {
             let timerView = segue.destination as! TimerViewController
             timerView.currentPlan = currentPlan
             timerView.index = index
-            timerView.type = type
+            timerView.plan = plan
         }
     }
     

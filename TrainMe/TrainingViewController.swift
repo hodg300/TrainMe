@@ -15,7 +15,7 @@ class TrainingViewController: UIViewController {
     var currentPlan :[Step] = [Step]()
     var planTitle :String?
     var index :Int = 0
-    var type : String!
+    var plan : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,7 @@ class TrainingViewController: UIViewController {
             let explainTrainingView = segue.destination as! ExplainTrainingViewController
             explainTrainingView.currentPlan = currentPlan
             explainTrainingView.index = index
-            explainTrainingView.type = type
+            explainTrainingView.plan = plan
         }
     }
     

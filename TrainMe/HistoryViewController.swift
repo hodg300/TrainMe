@@ -12,8 +12,7 @@ import Firebase
 class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var history_TBL_tableView: UITableView!
-    
-    var historyOfTraining:[Training] = []
+    let users = "users"
     let cellReuseIdentifier = "name_cell"
     var ref: DatabaseReference!
     var dataList :[String] = []
@@ -21,7 +20,6 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         loadDataFromFirebase()
         history_TBL_tableView.delegate = self
         history_TBL_tableView.dataSource = self
@@ -29,9 +27,9 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     func loadDataFromFirebase(){
-        ref = Database.database().reference().child("Users").child(String(Auth.auth().currentUser!.uid))
+        ref = Database.database().reference().child(users).child(String(Auth.auth().currentUser!.uid))
                 ref.observe(.childAdded, with: { snapshot in
-                    self.dataList = snapshot.value as! [String]
+                    self.dataList.append(snapshot.value as! String)
                     self.history_TBL_tableView.reloadData()
                     print("\(self.dataList)")
                 })
@@ -56,15 +54,5 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
         return cell!
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

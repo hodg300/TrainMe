@@ -15,7 +15,7 @@ class TimerViewController: UIViewController {
     var timer:Timer?
     var timeLeft = 1
     var index : Int!
-    var type : String!
+    var plan : String!
     var currentPlan :[Step] = [Step]()
     var ref: DatabaseReference!
     var boolRest : Bool = false
@@ -25,20 +25,16 @@ class TimerViewController: UIViewController {
         super.viewDidLoad()
         index += 1
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
-        setInfo()
         
         
     }
     
 
-    
-        @objc func onTimerFires()
+
+    @objc func onTimerFires()
     {
         timeLeft -= 1
         Timer_LBL_trainingTimer.text = "\(timeLeft) seconds"
-        
-        
-
         if timeLeft <= 0 {
             if(boolRest == false){
                 timeLeft = 1
@@ -51,8 +47,10 @@ class TimerViewController: UIViewController {
                 if(index != currentPlan.count){
                     performSegue(withIdentifier: "goToAnotherStepExplain", sender: self)
                 }else{
+                    //Add the plan to db
                     ref = Database.database().reference().child("users").child(String(Auth.auth().currentUser!.uid))
-                    ref.childByAutoId().setValue(type)
+                    ref.childByAutoId().setValue(plan)
+                    
                     Timer_LBL_trainingTimer.text = "Well Done!"
                     let delay : Double = 2.0 //delay time in seconds
                     let time = DispatchTime.now() + delay
@@ -66,9 +64,8 @@ class TimerViewController: UIViewController {
         }
     }
     
-    func setInfo(){
-        
-    }
+    
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -79,7 +76,7 @@ class TimerViewController: UIViewController {
             let explainTrainingView = segue.destination as! ExplainTrainingViewController
             explainTrainingView.currentPlan = currentPlan
             explainTrainingView.index = index
-            explainTrainingView.type = type
+            explainTrainingView.plan = plan
         }
     }
     
