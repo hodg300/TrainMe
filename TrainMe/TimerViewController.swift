@@ -23,13 +23,6 @@ class TimerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("in hereee!@#!@#!@#!@#!@#!@#!@#!@#!")
-        ref = Database.database().reference().child("Users").child(String(Auth.auth().currentUser!.uid))
-        ref.observe(.childAdded, with: { snapshot in
-            self.dataList = snapshot.value as! [String]
-            self.dataList.append(self.type)
-//            print("\(self.dataList)")
-        })
         index += 1
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
         setInfo()
@@ -58,7 +51,8 @@ class TimerViewController: UIViewController {
                 if(index != currentPlan.count){
                     performSegue(withIdentifier: "goToAnotherStepExplain", sender: self)
                 }else{
-                    ref.setValue(["type":dataList])
+                    ref = Database.database().reference().child("users").child(String(Auth.auth().currentUser!.uid))
+                    ref.childByAutoId().setValue(type)
                     Timer_LBL_trainingTimer.text = "Well Done!"
                     let delay : Double = 2.0 //delay time in seconds
                     let time = DispatchTime.now() + delay

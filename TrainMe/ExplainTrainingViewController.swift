@@ -15,7 +15,7 @@ class ExplainTrainingViewController: UIViewController {
     var currentPlan :[Step] = [Step]()
     var index : Int!
     var timer:Timer?
-    var timeLeft = 10
+    var timeLeft = 1
     var type :String!
     
     override func viewDidLoad() {

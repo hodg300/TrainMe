@@ -116,6 +116,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="logout black"/>
                                 <connections>
+                                    <action selector="signOut:" destination="ERl-xG-qFh" eventType="touchUpInside" id="cqh-4a-yjM"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToLogin" modalPresentationStyle="fullScreen" id="7UD-MY-qYS"/>
                                 </connections>
                             </button>
@@ -166,10 +167,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="33.333332061767578"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APZ-rN-MwB">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APZ-rN-MwB">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="33.333333333333336"/>
-                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                                                    <nil key="textColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <font key="NSFont" size="30" name="MarkerFelt-Thin"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -204,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8K-bB-sSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="858"/>
+            <point key="canvasLocation" x="792.75362318840587" y="857.8125"/>
         </scene>
         <!--Training View Controller-->
         <scene sceneID="GhL-P9-BMp">
@@ -415,6 +422,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="uBH-9s-10o"/>
         <segue reference="o90-MA-b92"/>
         <segue reference="euZ-1J-vIn"/>
         <segue reference="P31-gn-LKK"/>

@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import Firebase
 
 class PlansViewController: UIViewController {
 
     var plans = [String() : [Step]()]
-    
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         createPlansDict()
+        checkExistsing()
+        
+    }
+    
+    
+    func checkExistsing(){
+        self.ref = Database.database().reference().child("users")
+
+              ref.observeSingleEvent(of: .value, with: { (snapshot) in
+
+                  if snapshot.hasChild(Auth.auth().currentUser!.uid){
+                  }else{
+                    self.ref.child(Auth.auth().currentUser!.uid).setValue(Auth.auth().currentUser?.uid)
+                  }
+              })
     }
     
     func createPlansDict(){
@@ -32,6 +49,15 @@ class PlansViewController: UIViewController {
         }
     }
     
+    @IBAction func signOut(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
+        
+    }
     
     // MARK: - Navigation
 
