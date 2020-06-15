@@ -49,7 +49,11 @@ class TimerViewController: UIViewController {
                 }else{
                     //Add the plan to db
                     ref = Database.database().reference().child("users").child(String(Auth.auth().currentUser!.uid))
-                    ref.childByAutoId().setValue(plan)
+                    let df = DateFormatter()
+                    df.dateFormat = "yyyy-MM-dd hh:mm:ss"
+                    let now = df.string(from: Date())
+                    print("\(now)")
+                    ref.childByAutoId().setValue("\(plan!) ,\(now)")
                     
                     Timer_LBL_trainingTimer.text = "Well Done!"
                     let delay : Double = 2.0 //delay time in seconds

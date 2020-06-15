@@ -21,6 +21,11 @@
 		A767425B24939F9800F3BD31 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425A24939F9800F3BD31 /* PlansViewController.swift */; };
 		A767425D24939FE000F3BD31 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425C24939FE000F3BD31 /* TrainingViewController.swift */; };
 		A767425F2493A02B00F3BD31 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767425E2493A02B00F3BD31 /* HistoryViewController.swift */; };
+		A7ACC3A724979E2B0059D6D0 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7ACC3A224979E2A0059D6D0 /* 2.wav */; };
+		A7ACC3A824979E2B0059D6D0 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7ACC3A324979E2A0059D6D0 /* 1.wav */; };
+		A7ACC3A924979E2B0059D6D0 /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7ACC3A424979E2B0059D6D0 /* 5.wav */; };
+		A7ACC3AA24979E2B0059D6D0 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7ACC3A524979E2B0059D6D0 /* 3.wav */; };
+		A7ACC3AB24979E2B0059D6D0 /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = A7ACC3A624979E2B0059D6D0 /* 4.wav */; };
 		A7F61B49249617C10037203B /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F61B48249617C10037203B /* MyCustomCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,11 @@
 		A767425A24939F9800F3BD31 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		A767425C24939FE000F3BD31 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
 		A767425E2493A02B00F3BD31 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		A7ACC3A224979E2A0059D6D0 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		A7ACC3A324979E2A0059D6D0 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		A7ACC3A424979E2B0059D6D0 /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
+		A7ACC3A524979E2B0059D6D0 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		A7ACC3A624979E2B0059D6D0 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
 		A7F61B48249617C10037203B /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 		DD55C2BF22C6DC21C57423C7 /* Pods-TrainMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainMe.release.xcconfig"; path = "Target Support Files/Pods-TrainMe/Pods-TrainMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +90,7 @@
 		A72317C524936149009C024E /* TrainMe */ = {
 			isa = PBXGroup;
 			children = (
+				A7ACC3A124979DA60059D6D0 /* Sounds */,
 				A76742592493731200F3BD31 /* TrainMe.entitlements */,
 				A72317C624936149009C024E /* AppDelegate.swift */,
 				A72317C824936149009C024E /* SceneDelegate.swift */,
@@ -98,6 +109,18 @@
 				A7F61B48249617C10037203B /* MyCustomCell.swift */,
 			);
 			path = TrainMe;
+			sourceTree = "<group>";
+		};
+		A7ACC3A124979DA60059D6D0 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A7ACC3A324979E2A0059D6D0 /* 1.wav */,
+				A7ACC3A224979E2A0059D6D0 /* 2.wav */,
+				A7ACC3A524979E2B0059D6D0 /* 3.wav */,
+				A7ACC3A624979E2B0059D6D0 /* 4.wav */,
+				A7ACC3A424979E2B0059D6D0 /* 5.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		C6D20771FCB8DB4FF8EF0188 /* Pods */ = {
@@ -178,10 +201,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7ACC3A824979E2B0059D6D0 /* 1.wav in Resources */,
 				A72317D32493614B009C024E /* LaunchScreen.storyboard in Resources */,
 				A72317DD24936762009C024E /* GoogleService-Info.plist in Resources */,
+				A7ACC3AB24979E2B0059D6D0 /* 4.wav in Resources */,
 				A72317D02493614B009C024E /* Assets.xcassets in Resources */,
+				A7ACC3AA24979E2B0059D6D0 /* 3.wav in Resources */,
+				A7ACC3A724979E2B0059D6D0 /* 2.wav in Resources */,
 				A72317CE24936149009C024E /* Main.storyboard in Resources */,
+				A7ACC3A924979E2B0059D6D0 /* 5.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
