@@ -7,19 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 import Firebase
 class TimerViewController: UIViewController {
 
     @IBOutlet weak var Timer_LBL_trainingTimer: UILabel!
     @IBOutlet weak var Timer_LBL_rest: UILabel!
     var timer:Timer?
-    var timeLeft = 1
+    var timeLeft = 10
     var index : Int!
     var plan : String!
     var currentPlan :[Step] = [Step]()
     var ref: DatabaseReference!
     var boolRest : Bool = false
     var dataList = [String]()
+    var audioPlayer : AVAudioPlayer!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,23 @@ class TimerViewController: UIViewController {
         
         
     }
+    func playBackgorundMusic(counter:Int) {
+        if(counter > 0 && counter <= 5){
+            let pathToSound = Bundle.main.path(forResource: "\(counter)", ofType: "wav")!
+            let url = URL(fileURLWithPath: pathToSound)
+            
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                //play background music in loop
+                audioPlayer.numberOfLoops = 0
+                audioPlayer.play();
+                print("song now---------------------\(counter)")
+            } catch {
+                //Error handling.
+                print("Couldn't find sound file...")
+            }
+        }
+    }
     
 
 
@@ -35,9 +55,10 @@ class TimerViewController: UIViewController {
     {
         timeLeft -= 1
         Timer_LBL_trainingTimer.text = "\(timeLeft) seconds"
+        playBackgorundMusic(counter: timeLeft)
         if timeLeft <= 0 {
             if(boolRest == false){
-                timeLeft = 1
+                timeLeft = 10
                 Timer_LBL_rest.text = "Rest..."
                 boolRest = true
             }
