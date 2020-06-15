@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "report.png",
+      "filename" : "logout.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "report-1.png",
+      "filename" : "logout-1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -23,7 +23,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "report-2.png",
+      "filename" : "logout-3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
