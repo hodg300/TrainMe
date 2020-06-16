@@ -14,5 +14,5 @@ target 'TrainMe' do
     pod 'Firebase/Database'
     pod 'FirebaseUI'
     pod 'FirebaseUI/Google'
-    pod 'Firebase/Firestore'
+    pod 'FSCalendar'
 end

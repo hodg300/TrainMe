@@ -14,19 +14,23 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var Timer_LBL_trainingTimer: UILabel!
     @IBOutlet weak var Timer_LBL_rest: UILabel!
     var timer:Timer?
-    var timeLeft = 10
+    var timeLeft = 3
     var index : Int!
     var plan : String!
     var currentPlan :[Step] = [Step]()
     var ref: DatabaseReference!
-    var boolRest : Bool = false
+    var boolRest : Bool = true
     var dataList = [String]()
     var audioPlayer : AVAudioPlayer!
-
+    var numOfRound = 0
+    var side : Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        index += 1
+        if(currentPlan[index].mul == 2){
+            Timer_LBL_rest.text = "First Side..."
+            
+        }
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
         
         
@@ -55,17 +59,38 @@ class TimerViewController: UIViewController {
     {
         timeLeft -= 1
         Timer_LBL_trainingTimer.text = "\(timeLeft) seconds"
-        playBackgorundMusic(counter: timeLeft)
+//        playBackgorundMusic(counter: timeLeft)
         if timeLeft <= 0 {
-            if(boolRest == false){
-                timeLeft = 10
-                Timer_LBL_rest.text = "Rest..."
-                boolRest = true
+            if(self.numOfRound < (currentPlan[index].rounds * currentPlan[index].mul)){
+                timeLeft = 3
+                if(self.boolRest){
+                    self.numOfRound += 1
+                    Timer_LBL_rest.text = "Rest..."
+                    self.boolRest = false
+                }else{
+                    if(currentPlan[index].mul != 2){
+                        Timer_LBL_rest.text = ""
+                        self.boolRest = true
+                    }else{
+                        if(side){
+                            Timer_LBL_rest.text = "Second Side.."
+                            self.boolRest = true
+                            self.side = false
+                        }else{
+                            Timer_LBL_rest.text = "First Side.."
+                            self.boolRest = true
+                            self.side = true
+                        }
+                    }
+                }
+                
             }
             else{
                 timer?.invalidate()
                 timer = nil
-                if(index != currentPlan.count){
+                index += 1
+                if(index < currentPlan.count){
+                    print("\(String(describing: index)) --- into \(currentPlan.count)")
                     performSegue(withIdentifier: "goToAnotherStepExplain", sender: self)
                 }else{
                     //Add the plan to db

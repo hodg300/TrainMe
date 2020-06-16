@@ -18,9 +18,8 @@ class TrainingViewController: UIViewController {
     
     func setInfo(){
         Training_LBL_title.text = planTitle
-        Training_LBL_description.font = UIFont(name: "Marker felt", size: 30)
         for i in 0..<currentPlan.count{
-            Training_LBL_description.text! += "\(i+1). \(currentPlan[i].nameOfStep!)\n"
+            Training_LBL_description.text! += "\(i+1). \(currentPlan[i].nameOfStep!)  X \(currentPlan[i].rounds!)\n"
         }
         
     }
