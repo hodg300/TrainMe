@@ -74,7 +74,7 @@ class TimerViewController: UIViewController {
                     df.dateFormat = "yyyy-MM-dd hh:mm:ss"
                     let now = df.string(from: Date())
                     print("\(now)")
-                    ref.childByAutoId().setValue("\(plan!) ,\(now)")
+                    ref.childByAutoId().setValue(["plan":plan!,"date":now])
                     
                     Timer_LBL_trainingTimer.text = "Well Done!"
                     let delay : Double = 2.0 //delay time in seconds
