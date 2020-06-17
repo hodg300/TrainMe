@@ -35,23 +35,7 @@ class TimerViewController: UIViewController {
         
         
     }
-    func playBackgorundMusic(counter:Int) {
-        if(counter > 0 && counter <= 5){
-            let pathToSound = Bundle.main.path(forResource: "\(counter)", ofType: "wav")!
-            let url = URL(fileURLWithPath: pathToSound)
-            
-            do {
-                audioPlayer = try AVAudioPlayer(contentsOf: url)
-                //play background music in loop
-                audioPlayer.numberOfLoops = 0
-                audioPlayer.play();
-                print("song now---------------------\(counter)")
-            } catch {
-                //Error handling.
-                print("Couldn't find sound file...")
-            }
-        }
-    }
+  
     
 
 
@@ -59,7 +43,6 @@ class TimerViewController: UIViewController {
     {
         timeLeft -= 1
         Timer_LBL_trainingTimer.text = "\(timeLeft) seconds"
-//        playBackgorundMusic(counter: timeLeft)
         if timeLeft <= 0 {
             if(self.numOfRound < (currentPlan[index].rounds * currentPlan[index].mul)){
                 timeLeft = 5

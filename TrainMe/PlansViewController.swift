@@ -23,7 +23,7 @@ class PlansViewController: UIViewController {
         self.ref = Database.database().reference().child("users")
 
               ref.observeSingleEvent(of: .value, with: { (snapshot) in
-
+                print("------------------------\(Auth.auth())")
                   if snapshot.hasChild(Auth.auth().currentUser!.uid){
                   }else{
                     self.ref.child(Auth.auth().currentUser!.uid).setValue(Auth.auth().currentUser?.uid)
