@@ -38,8 +38,6 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
                         
                     }
                    
-                    
-//                    self.dataList.append(snapshot.value as! String)
                     self.history_TBL_tableView.reloadData()
                     print("\(self.plans)")
                     print("\(self.dates)")

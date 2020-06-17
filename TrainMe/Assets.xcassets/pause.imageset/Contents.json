@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "pause.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -11,6 +12,7 @@
           "value" : "light"
         }
       ],
+      "filename" : "pause-1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -21,6 +23,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "pause-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

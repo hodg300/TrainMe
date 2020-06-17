@@ -14,7 +14,7 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var Timer_LBL_trainingTimer: UILabel!
     @IBOutlet weak var Timer_LBL_rest: UILabel!
     var timer:Timer?
-    var timeLeft = 3
+    var timeLeft = 5
     var index : Int!
     var plan : String!
     var currentPlan :[Step] = [Step]()
@@ -62,7 +62,7 @@ class TimerViewController: UIViewController {
 //        playBackgorundMusic(counter: timeLeft)
         if timeLeft <= 0 {
             if(self.numOfRound < (currentPlan[index].rounds * currentPlan[index].mul)){
-                timeLeft = 3
+                timeLeft = 5
                 if(self.boolRest){
                     self.numOfRound += 1
                     Timer_LBL_rest.text = "Rest..."

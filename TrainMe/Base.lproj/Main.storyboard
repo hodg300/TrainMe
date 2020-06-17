@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="MxT-uQ-IPi">
-                                <rect key="frame" x="55" y="331" width="304" height="234"/>
+                                <rect key="frame" x="360" y="549.5" width="304" height="267"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrainMe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWZ-Sr-ao4">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="98"/>
@@ -25,7 +25,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTa-CC-UIR">
-                                        <rect key="frame" x="109" y="178" width="86" height="56"/>
+                                        <rect key="frame" x="76.5" y="178" width="151" height="89"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                         <state key="normal" title="Login"/>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -58,14 +58,14 @@
             <objects>
                 <viewController id="ERl-xG-qFh" customClass="PlansViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mFn-Gr-jFu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ewd-Qo-Y8R">
-                                <rect key="frame" x="130.33333333333337" y="264.33333333333337" width="153.66666666666663" height="367.33333333333337"/>
+                                <rect key="frame" x="419" y="458.5" width="186.5" height="449.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uv-ks-Ecu">
-                                        <rect key="frame" x="0.0" y="0.0" width="153.66666666666666" height="76.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="92.5"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="70"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -74,7 +74,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oU2-f2-Rnf">
-                                        <rect key="frame" x="61.333333333333314" y="106.33333333333337" width="31" height="67"/>
+                                        <rect key="frame" x="71" y="122.5" width="44" height="89"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
                                         <state key="normal" title="A"/>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -86,7 +86,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4g-mE-kU1">
-                                        <rect key="frame" x="61.666666666666657" y="203.33333333333337" width="30" height="67"/>
+                                        <rect key="frame" x="75.5" y="241.5" width="35" height="89"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
                                         <state key="normal" title="B"/>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -98,7 +98,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxl-eH-EvR">
-                                        <rect key="frame" x="61.666666666666657" y="300.33333333333331" width="30" height="67"/>
+                                        <rect key="frame" x="77" y="360.5" width="32" height="89"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
                                         <state key="normal" title="C"/>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -113,7 +113,7 @@
                                 <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFE-hs-MbT">
-                                <rect key="frame" x="354" y="54" width="50" height="50"/>
+                                <rect key="frame" x="944" y="20" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Hq6-rf-Gz1">
                                         <variation key="heightClass=regular-widthClass=regular" constant="70"/>
@@ -128,7 +128,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCS-Q2-h5g">
-                                <rect key="frame" x="10" y="54" width="50" height="50"/>
+                                <rect key="frame" x="10" y="20" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="OgE-vq-5st">
                                         <variation key="heightClass=regular-widthClass=regular" constant="70"/>
@@ -169,11 +169,11 @@
             <objects>
                 <viewController id="iLq-Et-RHs" customClass="HistoryViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tUD-hu-e7b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XM8-8C-vbm">
-                                <rect key="frame" x="10" y="54" width="50" height="50"/>
+                                <rect key="frame" x="10" y="20" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="9aN-ZS-ipA">
                                         <variation key="heightClass=regular-widthClass=regular" constant="70"/>
@@ -188,18 +188,18 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jqa-oi-pez">
-                                <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                                <rect key="frame" x="0.0" y="100" width="1024" height="1246"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="name_cell" id="Y0a-Wh-1fF" customClass="MyCustomCell" customModule="TrainMe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="27"/>
+                                        <rect key="frame" x="0.0" y="28" width="1024" height="39"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y0a-Wh-1fF" id="CAf-c7-lbb">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="27"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APZ-rN-MwB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="27"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="39"/>
                                                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -222,7 +222,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your last workouts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWG-C1-r9J">
-                                <rect key="frame" x="97.666666666666686" y="54" width="219" height="50"/>
+                                <rect key="frame" x="355.5" y="20" width="313" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3ok-d2-xh2">
                                         <variation key="heightClass=regular-widthClass=regular" constant="70"/>
@@ -268,14 +268,14 @@
             <objects>
                 <viewController id="dRQ-to-HYN" customClass="TrainingViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xyJ-4p-537">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vHq-Vk-0Ih">
-                                <rect key="frame" x="144.33333333333334" y="354.33333333333331" width="125.66666666666666" height="187.33333333333331"/>
+                                <rect key="frame" x="398.5" y="477" width="227" height="412"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syi-b3-WGg">
-                                        <rect key="frame" x="0.0" y="0.0" width="125.66666666666667" height="51.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="227" height="92.5"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="47"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -284,13 +284,19 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTC-bj-x1X">
-                                        <rect key="frame" x="10" y="91.333333333333371" width="105.66666666666667" height="0.0"/>
+                                        <rect key="frame" x="10" y="162.5" width="207" height="0.0"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vu6-qV-RbN" userLabel="TimeOfTraining">
+                                        <rect key="frame" x="92.5" y="232.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hel-CS-W1X">
-                                        <rect key="frame" x="17.666666666666657" y="131.33333333333337" width="90" height="56"/>
+                                        <rect key="frame" x="35" y="323" width="157" height="89"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                         <state key="normal" title="Start"/>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -304,6 +310,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="lTC-bj-x1X" firstAttribute="leading" secondItem="vHq-Vk-0Ih" secondAttribute="leading" constant="10" id="59C-BZ-hbQ"/>
+                                    <constraint firstItem="vu6-qV-RbN" firstAttribute="centerX" secondItem="vHq-Vk-0Ih" secondAttribute="centerX" id="OUV-wK-w6U"/>
                                     <constraint firstAttribute="trailing" secondItem="lTC-bj-x1X" secondAttribute="trailing" constant="10" id="Qhi-xo-1V0"/>
                                 </constraints>
                                 <variation key="heightClass=compact-widthClass=regular" spacing="20"/>
@@ -311,7 +318,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" spacing="70"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-8z-0qo">
-                                <rect key="frame" x="10" y="54" width="50" height="50"/>
+                                <rect key="frame" x="10" y="10" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8Fo-eb-V7g">
                                         <variation key="heightClass=regular-widthClass=regular" constant="70"/>
@@ -336,6 +343,7 @@
                         <viewLayoutGuide key="safeArea" id="a2d-EI-jex"/>
                     </view>
                     <connections>
+                        <outlet property="Training_LBL_TimeOfTraining" destination="vu6-qV-RbN" id="Phv-Y9-ZYz"/>
                         <outlet property="Training_LBL_description" destination="lTC-bj-x1X" id="uhR-Ad-Dxt"/>
                         <outlet property="Training_LBL_title" destination="syi-b3-WGg" id="qjL-3w-nOg"/>
                     </connections>
@@ -349,14 +357,14 @@
             <objects>
                 <viewController id="Pwe-1w-tPZ" customClass="ExplainTrainingViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7NN-nM-SAe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TZd-pd-W4C">
-                                <rect key="frame" x="0.0" y="104" width="414" height="748"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1346"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="step 1 - 30 sec push ups" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptc-N9-gF9">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptc-N9-gF9">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ysm-TE-7xy">
                                                 <variation key="heightClass=compact-widthClass=regular" constant="50"/>
@@ -369,24 +377,30 @@
                                         <variation key="heightClass=compact-widthClass=compact">
                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                         </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
+                                        </variation>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="578" image="pushups" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-4Y-8s3">
-                                        <rect key="frame" x="0.0" y="120" width="414" height="578"/>
+                                        <rect key="frame" x="0.0" y="50" width="1024" height="1246"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 seconds to start ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YI2-4P-lm9">
-                                        <rect key="frame" x="0.0" y="698" width="414" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YI2-4P-lm9">
+                                        <rect key="frame" x="0.0" y="1296" width="1024" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ePd-Uw-Lml"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=regular" spacing="15"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbn-Oy-JtN">
-                                <rect key="frame" x="10" y="54" width="50" height="50"/>
+                                <rect key="frame" x="30" y="30" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="WLf-Si-l6P">
                                         <variation key="heightClass=regular-widthClass=regular" constant="70"/>
@@ -401,6 +415,21 @@
                                     <segue destination="ERl-xG-qFh" kind="presentation" identifier="stopExplainAndGoToPlans" modalPresentationStyle="fullScreen" id="odp-ma-3nU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee1-l4-TYC" userLabel="PauseAndResume">
+                                <rect key="frame" x="924" y="30" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Kd8-3E-qby">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="50" id="fjW-7b-ADf">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button" image="pause"/>
+                                <connections>
+                                    <action selector="pauseAndResume:" destination="Pwe-1w-tPZ" eventType="touchUpInside" id="jcJ-5j-D2P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -411,11 +440,17 @@
                             <constraint firstItem="TZd-pd-W4C" firstAttribute="leading" secondItem="4qz-Ji-qxC" secondAttribute="leading" id="GMd-i1-Ht8">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="4qz-Ji-qxC" firstAttribute="trailing" secondItem="ee1-l4-TYC" secondAttribute="trailing" constant="10" id="IPj-cO-taP">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
                             <constraint firstItem="TZd-pd-W4C" firstAttribute="top" secondItem="4qz-Ji-qxC" secondAttribute="top" id="QTh-wI-0cR">
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="60"/>
                             </constraint>
                             <constraint firstItem="pbn-Oy-JtN" firstAttribute="top" secondItem="4qz-Ji-qxC" secondAttribute="top" constant="10" id="WCG-Vr-IPI">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="ee1-l4-TYC" firstAttribute="top" secondItem="4qz-Ji-qxC" secondAttribute="top" constant="10" id="YJo-jy-t4f">
                                 <variation key="heightClass=regular-widthClass=regular" constant="30"/>
                             </constraint>
                             <constraint firstItem="pbn-Oy-JtN" firstAttribute="leading" secondItem="4qz-Ji-qxC" secondAttribute="leading" constant="10" id="ZDp-4N-po5">
@@ -429,6 +464,7 @@
                         <viewLayoutGuide key="safeArea" id="4qz-Ji-qxC"/>
                     </view>
                     <connections>
+                        <outlet property="ExplainTraining_BTN_pauseAndResume" destination="ee1-l4-TYC" id="nMD-c1-2as"/>
                         <outlet property="ExplainTraining_IMG_image" destination="fh9-4Y-8s3" id="dXa-0q-Jl9"/>
                         <outlet property="ExplainTraining_LBL_timer" destination="YI2-4P-lm9" id="W9f-IG-J29"/>
                         <outlet property="ExplainTraining_LBL_title" destination="ptc-N9-gF9" id="6XZ-tP-ybh"/>
@@ -444,14 +480,14 @@
             <objects>
                 <viewController id="qeK-N4-Ap7" customClass="TimerViewController" customModule="TrainMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iIj-2P-CrP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="CKJ-IA-DeL">
-                                <rect key="frame" x="20" y="304" width="374" height="288"/>
+                                <rect key="frame" x="20" y="539" width="984" height="288"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rci-r6-T0x">
-                                        <rect key="frame" x="162" y="0.0" width="50" height="110"/>
+                                        <rect key="frame" x="467" y="0.0" width="50" height="110"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="34"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -460,7 +496,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVV-xE-20i">
-                                        <rect key="frame" x="130" y="178" width="114" height="110"/>
+                                        <rect key="frame" x="435" y="178" width="114" height="110"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="67"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -501,6 +537,7 @@
         <image name="back" width="128" height="128"/>
         <image name="history" width="128" height="128"/>
         <image name="logout" width="128" height="128"/>
+        <image name="pause" width="128" height="128"/>
         <image name="pushups" width="700" height="569"/>
         <image name="stop" width="128" height="128"/>
     </resources>

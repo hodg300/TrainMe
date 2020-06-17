@@ -7,11 +7,13 @@ class PlansViewController: UIViewController {
 
     var plans = [String() : [Step]()]
     var ref: DatabaseReference!
+    var time = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         createPlansDict()
+        
         checkExistsing()
         
     }
@@ -66,18 +68,19 @@ class PlansViewController: UIViewController {
             trainingView.currentPlan = plans["A"]!
             trainingView.planTitle = "Plan A"
             trainingView.plan = "A"
+            trainingView.timeOfOneStep = self.time
         }else if(segue.identifier == "goToPlanB"){
             let trainingView = segue.destination as! TrainingViewController
             trainingView.currentPlan = plans["B"]!
             trainingView.planTitle = "Plan B"
             trainingView.plan = "B"
-
+            trainingView.timeOfOneStep = self.time
         }else if(segue.identifier == "goToPlanC"){
             let trainingView = segue.destination as! TrainingViewController
             trainingView.currentPlan = plans["C"]!
             trainingView.planTitle = "Plan C"
             trainingView.plan = "C"
-
+            trainingView.timeOfOneStep = self.time
         }
         
     }

@@ -5,15 +5,30 @@ class TrainingViewController: UIViewController {
 
     @IBOutlet weak var Training_LBL_title: UILabel!
     @IBOutlet weak var Training_LBL_description: UILabel!
+    @IBOutlet weak var Training_LBL_TimeOfTraining: UILabel!
     var currentPlan :[Step] = [Step]()
     var planTitle :String?
     var index :Int = 0
     var plan : String!
+    var timeOfOneStep : Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setInfo()
+        Training_LBL_TimeOfTraining.text = "\(String(format: "%.2f", calculateTimeOfTraining(plan: self.currentPlan)))mins"
 
+    }
+    
+    func calculateTimeOfTraining(plan:[Step]) -> Double{
+        var result : Double = 0
+        var restResult = 0
+        var trainingResult = 0
+        for i in 0..<plan.count{
+            trainingResult = currentPlan[i].rounds * timeOfOneStep * currentPlan[i].mul
+            restResult = ((currentPlan[i].rounds * currentPlan[i].mul) - 1) * timeOfOneStep
+            result += Double(trainingResult + restResult)
+        }
+        return result/60
     }
     
     func setInfo(){
