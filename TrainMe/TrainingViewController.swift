@@ -15,20 +15,24 @@ class TrainingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setInfo()
-        Training_LBL_TimeOfTraining.text = "\(String(format: "%.2f", calculateTimeOfTraining(plan: self.currentPlan)))mins"
+        Training_LBL_TimeOfTraining.text = "\(calculateTimeOfTraining(plan: self.currentPlan))mins"
 
     }
     
-    func calculateTimeOfTraining(plan:[Step]) -> Double{
-        var result : Double = 0
+    func calculateTimeOfTraining(plan:[Step]) -> String{
+        var result : Int = 0
         var restResult = 0
         var trainingResult = 0
+        var minutes = 0;
+        var seconds = 0;
         for i in 0..<plan.count{
             trainingResult = currentPlan[i].rounds * timeOfOneStep * currentPlan[i].mul
             restResult = ((currentPlan[i].rounds * currentPlan[i].mul) - 1) * timeOfOneStep
-            result += Double(trainingResult + restResult)
+            result += trainingResult + restResult
         }
-        return result/60
+        minutes = (result % 3600) / 60
+        seconds = (result % 3600) % 60
+        return "\(minutes):\(seconds)"
     }
     
     func setInfo(){
